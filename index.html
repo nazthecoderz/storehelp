@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111713">
+  <title>Barista Glasses Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient"></div>
+  <header>
+    <div class="brand">
+      <span class="brand-mark">B</span>
+      <div><b>BARISTA GUIDE</b><small>PERSONAL QUICK REFERENCE</small></div>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="screen">
+      <div class="home-guides">
+        <div class="home-guide"><h2>ESPRESSO SHOTS</h2>
+          <div><b>Hot</b><span>Short 1 · Tall 1 · Grande 2 · Venti 2</span></div>
+          <div><b>Iced</b><span>Tall 1 · Grande 2 · Venti 3</span></div></div>
+        <div class="home-guide"><h2>SYRUP PUMPS</h2>
+          <div><b>Hot</b><span>Tall 2 · Grande 4 · Venti 5</span></div>
+          <div><b>Iced</b><span>Tall 2 · Grande 4 · Venti 6</span></div></div>
+      </div>
+      <div id="drinkMenu" class="drink-list"></div>
+    </section>
+    <section id="detail" class="screen hidden">
+      <button class="back" data-back>‹ ALL DRINKS</button>
+      <h1 id="detailTitle">Latte</h1>
+      <div class="glass-card">
+        <div class="card-top"><span id="detailTag">HOT</span></div>
+        <div id="variantRow" class="variant-row">
+          <button class="variant active" data-variant="hot">Hot</button>
+          <button class="variant" data-variant="iced">Iced</button>
+        </div>
+        <ol id="steps" class="steps"></ol>
+        <div id="drinkGuides" class="drink-guides"></div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
